@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ticketing system</title>
+<h1>TICKETING SYSTEM</h1>
+<button type="button" name="login">
+<a href="login.html">login</a>
+</button><br>
+<form>
+<button>Projects</button>
+<input type="file" name="projects" id="projects"><br>
+<label for="login" name="login"><br>
+</form>
+</head>
+<body>
+  <div id="conatainer"></id>
+    <script>
+    const xhr = new XMLHttpRequest():
+    const container = document.getElementById('container');
+    xhr.onload = function (){
+      if(this.status === 200){
+        container.innerHTML = xhr.responseText:
+      }else{
+        console.warn('did not receive 200 ok from response!');
+      }
+    };
+    xhr.open('get','response.html');
+    xhr.send();
+</script>
+</body>
+</html>
